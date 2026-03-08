@@ -407,3 +407,41 @@ footer {
     }
 
 }
+/* Small Mobile Fix for Shoes & Bag Cards */
+@media screen and (max-width:320px) {
+
+    /* HERO (আপনার আগে থেকে আছে) */
+
+    /* SHOES & BAG CARDS */
+    .shoe-card,
+    .Bag-card {
+        flex: 1 1 100%;
+        /* পুরো width নেবে */
+        min-width: 100%;
+        /* min-width override */
+        margin: 10px 0;
+        /* spacing উপরের দিকে */
+        padding: 15px;
+        /* cramped না হয় */
+    }
+
+    .shoes-box,
+    .Bag-box {
+        gap: 15px;
+        /* cramped না হয় */
+    }
+
+    .shoe-card img,
+    .Bag-card img {
+        max-width: 100%;
+        /* image responsive */
+        height: auto;
+    }
+
+    .shoe-card button,
+    .Bag-card button {
+        width: 100%;
+        /* button full width */
+        padding: 10px 0;
+    }
+}
